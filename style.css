@@ -31,7 +31,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, #007BFF, #26C6DA); /* Stylish gradient */
+    background: linear-gradient(45deg, #4e97e5, #a2d8de); /* Stylish gradient */
     border-bottom: 2px solid #00BCD4;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000;
@@ -54,7 +54,7 @@ header {
 /* Navigation Links */
 .navbar-nav .nav-link {
     text-decoration: none;
-    color: #fff;
+    color: #3b3b6d;
     font-size: 1.2rem; /* Slightly larger font size */
     padding: 12px 25px;
     margin: 0 10px; /* Add spacing between nav links */
@@ -102,14 +102,16 @@ header {
 }
 
 .dropdown-item {
-    color: #fff;
+    color: #3b3b6d;
     padding: 10px 20px;
     border-radius: 8px; /* Rounded corners for dropdown items */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
+
+
 .dropdown-item:hover {
-    background: linear-gradient(90deg, #007BFF, #26C6DA);
+    background: linear-gradient(90deg, #00BCD4, #FF4081);
     color: #fff;
     transform: scale(1.05);
 }
@@ -226,7 +228,7 @@ footer::before {
 
 /* Footer Content */
 footer h5 {
-    color: #00BCD4;
+    color: #0c464e;
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 1.2rem;
@@ -254,7 +256,7 @@ footer a:hover {
 
 /* Hover Links */
 .hover-link {
-    color: #bbb;
+    color: #3b3b6d;
     font-size: 1rem;
     margin-right: 10px;
     padding: 5px 10px;
@@ -269,9 +271,13 @@ footer a:hover {
     box-shadow: 0px 2px 5px rgba(0, 188, 212, 0.6); /* Add glow effect */
 }
 
+.text-light{
+    color: #3b3b6d !important;
+}
+
 /* Social Links */
 .social-link {
-    color: #bbb;
+    color: #3b3b6d  ;
     font-size: 1rem;
     margin-right: 10px;
     padding: 5px 10px;
@@ -414,27 +420,32 @@ medical coding line */
 
 /* Badge Styling */
 .rbt-badge-3 {
+
     position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 8px 15px;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
     font-size: 14px;
-    color: #fff;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
+    color: #333;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Monserat;
 }
 
-.rbt-badge-3:hover {
-    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+.rbt-badge-3 a{
+    text-decoration: none;
+    color: #000;
 }
+
 
 /* Card Body */
 .rbt-card-body {
     padding: 20px;
     text-align: center;
     transition: background-color 0.3s ease;
+    background: linear-gradient(45deg, #88b3e0, #b2e6ec); /* Stylish gradient */
+
 }
 
 .rbt-card-body:hover {
@@ -447,6 +458,7 @@ medical coding line */
     font-weight: 700;
     margin-bottom: 10px;
     transition: color 0.3s ease;
+    font-family: Monserat;
 }
 
 .rbt-card-title a {
@@ -462,12 +474,17 @@ medical coding line */
     font-size: 14px;
     color: #666;
     margin-bottom: 15px;
+    font-family: Monserat;
+}
+.rbt-meta li{
+list-style-type: none;
 }
 
 .rbt-card-text {
     font-size: 14px;
-    color: #555;
+    color: #3b3b6d;
     line-height: 1.6;
+    font-family: Monserat;
 }
 
 /* Button Link */
@@ -478,6 +495,7 @@ medical coding line */
     font-weight: bold;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
+    font-family: Monserat;
 }
 
 .rbt-btn-link i {
@@ -511,8 +529,21 @@ medical coding line */
 }
 
 
+/* View all courses */
 
-
+.new-course-btn{
+    text-decoration: none;
+                padding: 15px;
+                border-radius: 22px;
+                background-color: #1c5578;
+                color: #fff;
+                font-weight: bold;
+                transition: background 0.4s ease-in-out;
+}
+.new-course-btn:hover{
+    background: #003e66;
+    transform: scale(1.1);
+}
 
 
 /* Button Styling */
@@ -634,12 +665,15 @@ medical coding line */
 
 
 
+.query-section{
+    background:linear-gradient(45deg, #4e97e5, #a2d8de) !important;
 
+}
 
 
 /* General Medical Coding Section */
 .medical-coding-section {
-    background: linear-gradient(135deg, #f8f9fa, #eaf4f4);
+    background:linear-gradient(45deg, #4e97e5, #a2d8de);
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -689,7 +723,7 @@ medical coding line */
 .description {
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: #3b3b6d;
     margin: 20px 0;
 }
 
@@ -981,25 +1015,28 @@ medical coding line */
 .hero-section {
     text-align: center;
     padding: 60px 0;
+    background: linear-gradient(45deg, #88b3e0, #b2e6ec) !important;
 }
 
 .hero-title {
     font-size: 48px;
     font-weight: bold;
-    color: #333;
+    color: #3b3b6d;
     margin-bottom: 20px;
 }
 
 .hero-description {
     font-size: 18px;
-    color: #555;
+    color: #3b3b6d;
     margin-bottom: 30px;
 }
 
+
+
 .btn-hero {
     padding: 10px 30px;
-    background-color: #007bff;
-    color: white;
+    background-color: #fff;
+    color: #3b3b6d;
     border-radius: 5px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -1014,7 +1051,7 @@ medical coding line */
     padding: 20px;
     border: 1px solid #f0f0f0;
     border-radius: 10px;
-    background: #fff;
+    background: linear-gradient(45deg, #88b3e0, #b2e6ec);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1033,11 +1070,12 @@ medical coding line */
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color:#3b3b6d
 }
 
 .feature-description {
     font-size: 16px;
-    color: #666;
+    color: #3b3b6d;
 }
 /* General Section Styling */
 .testimonial-section {
@@ -1054,8 +1092,10 @@ medical coding line */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial-card .testimonial p:hover{
-color: white;
+
+.testimonial-card:hover::before{
+    background: linear-gradient(45deg, #88b3e0, #b2e6ec) !important;
+
 }
 
 
@@ -1100,7 +1140,7 @@ color: white;
 .testimonial p {
     font-size: 18px;
     font-weight: 500;
-    color: #333;
+    color: #3b3b6d;
     margin-bottom: 10px;
 }
 
@@ -1122,7 +1162,7 @@ color: white;
 
 
 .hero-section {
-    background: linear-gradient(145deg, #007bff, #00d4ff);
+    background: linear-gradient(45deg, #4e97e5, #a2d8de) !important;
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -1139,7 +1179,7 @@ color: white;
 .hero-subtitle {
     font-size: 20px;
     margin-bottom: 30px;
-    color: #f9f9f9;
+    color: #3b3b6d;
 }
 
 .hero-btn {

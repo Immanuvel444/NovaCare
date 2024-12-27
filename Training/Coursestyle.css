@@ -305,6 +305,7 @@ nav ul li a:hover {
     font-size: 18px;
     color: #f47373;
     background: #e1c7cc;
+    font-weight: bold;
 }
 
 .section-title .title {
@@ -426,6 +427,11 @@ nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.rbt-badge-3 a{
+    text-decoration: none;
+    color: #000;
+}
+
 .rbt-card-body {
     padding: 20px;
 }
@@ -441,6 +447,9 @@ nav ul li a:hover {
     color: #888;
     margin-bottom: 15px;
 }
+.rbt-meta li{
+    list-style-type: none;
+    }
 
 .rbt-card-text {
     font-size: 14px;
