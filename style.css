@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #3b3b6d; /* Define your color variable */
+    --secondary-color:linear-gradient(90deg, #000000a3, #c71551bd);
+  }
+
 /* General Styles */
 * {
     margin: 0;
@@ -31,8 +36,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, #4e97e5, #a2d8de); /* Stylish gradient */
-    border-bottom: 2px solid #00BCD4;
+    background: linear-gradient(45deg, #0c7bf1, #2dd5e7); /* Stylish gradient */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: background-color 0.3s ease;
@@ -40,7 +44,7 @@ header {
 
 /* Navbar Styling */
 .navbar {
-    padding: 20px 30px;
+    padding: 15px 30px;
 }
 
 .navbar-brand img {
@@ -73,7 +77,7 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #00BCD4, #FF4081);
+    background: linear-gradient(90deg, #000000a3, #c71551bd);
     z-index: -1;
     transition: left 0.4s ease;
 }
@@ -111,14 +115,14 @@ header {
 
 
 .dropdown-item:hover {
-    background: linear-gradient(90deg, #00BCD4, #FF4081);
+    background: linear-gradient(90deg, #000000a3, #c71551bd);
     color: #fff;
     transform: scale(1.05);
 }
 
 /* Header Buttons */
 .header-buttons .contact-btn {
-    background: linear-gradient(90deg, #FF4081, #00BCD4);
+    background:linear-gradient(90deg, #000000a3, #c71551bd);
     border: none;
     color: #fff;
     padding: 12px 30px; /* Increase button size */
@@ -535,7 +539,7 @@ list-style-type: none;
     text-decoration: none;
                 padding: 15px;
                 border-radius: 22px;
-                background-color: #1c5578;
+                background: var(--secondary-color);
                 color: #fff;
                 font-weight: bold;
                 transition: background 0.4s ease-in-out;
@@ -829,7 +833,7 @@ list-style-type: none;
 /* Subtitle Styling */
 .subtitle {
     font-size: 18px;
-    color: #666;
+    color: var(--primary-color);
     line-height: 1.8;
     margin-top: 10px;
 }
@@ -948,7 +952,7 @@ list-style-type: none;
     /* display: none; */
 }
 .btn-back-to-top {
-    background: linear-gradient(45deg, #0288d1, #26c6da);
+    background: var(--secondary-color);
     color: white;
     border: none;
     border-radius: 50%;
