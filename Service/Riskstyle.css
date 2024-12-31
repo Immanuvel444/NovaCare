@@ -139,11 +139,11 @@ nav ul li a:hover {
     }
 }
 
-.carousel-image {
-    width: 100%;         /* Ensure the image takes up the full width */
-    height: 500px;       /* Set a fixed height for the carousel */
-    object-fit: cover;   /* Ensures the image covers the entire area without distortion */
-}
+/* .carousel-image {
+    width: 100%;       
+    height: 500px;       
+    object-fit: cover;   
+} */
 
 
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
@@ -187,7 +187,7 @@ nav ul li a:hover {
 }
 
 .overview-label {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 12px;
     line-height: 125%;
     letter-spacing: .05em;
@@ -199,6 +199,7 @@ nav ul li a:hover {
 h1.h1 {
     font-size: 64px;
     padding-bottom: 16px;
+    font-weight: bold;
 }
 
 .center {
@@ -278,6 +279,7 @@ h1.h1 {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
+    height: 218px;
 }
 
 .tab-title {
@@ -416,7 +418,7 @@ h1.h1 {
   
   .card-image {
     width: 100%;
-    height: auto;
+    height: 200px;
   }
   
   .card-content {
@@ -507,20 +509,7 @@ footer .submenu li a:hover {
     line-height: 2;
 }
 
-
-
-
-
-@media (max-width: 768px) {
-    .carousel-image {
-        height: 300px;   /* Reduce the height for smaller screens */
-    }
-}
-
 @media (max-width: 480px) {
-    .carousel-image {
-        height: 200px;   /* Further reduce the height for very small screens */
-    }
 
     footer .submenu {
         position: static;
@@ -533,7 +522,6 @@ footer .submenu li a:hover {
 
 
 }
-
 
 @media (max-width: 480px) {
     .logo img {
@@ -558,3 +546,73 @@ footer .submenu li a:hover {
 
 
 }
+
+
+
+
+/* -------------------First step heading--------------------- */
+
+
+
+.services-section {
+    background: #f8f9fa; /* Adjust background color as needed */
+    text-align: center;
+    padding: 50px 20px; /* Add padding for spacing */
+  }
+  
+  .services-container {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .overview-label {
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust size as necessary */
+  }
+  
+  .services-title {
+    color: #004085; /* Navy color */
+    font-size: 2.5em; /* Heading size */
+    margin: 20px 0; /* Margin for spacing */
+    font-weight: bold;
+  }
+  
+  .banner-text {
+    color: #004085; /* Navy color */
+    font-size: 1.1em; /* Adjust size as necessary */
+    margin-bottom: 30px; /* Space below the text */
+  }
+  
+  .connect-button {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Add padding */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+  }
+  
+  .connect-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  
+  .services-section-1 {
+    background: #f8f9fa; /* Light background color */
+    padding: 50px 20px; /* Add padding for spacing */
+  }
+  
+  .services-container-1 {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    max-width: 1200px; /* Set max width for the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+
+
+
+
+

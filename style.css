@@ -28,6 +28,8 @@ body {
     padding: 15px 30px;
 }
 
+
+
 /* General Header Styles */
 
 
@@ -364,7 +366,7 @@ footer p {
     }
 }
 
-
+/* ..................................................... */
 
 
 /* 
@@ -745,7 +747,7 @@ list-style-type: none;
     border-radius: 50px;
     display: inline-block;
     transition: all 0.4s ease;
-    background: linear-gradient(90deg, #009688, #4caf50);
+    background: var(--primary-color);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -756,7 +758,7 @@ list-style-type: none;
 .gradient-button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(90deg, #4caf50, #009688);
+    background: var(--primary-color);
 
 }
 
@@ -812,7 +814,7 @@ list-style-type: none;
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, #009688, #4caf50, #8bc34a);
+    background: var(--primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientFlow 3s infinite;
@@ -844,23 +846,28 @@ list-style-type: none;
     padding: 10px 30px;
     font-size: 16px;
     font-weight: bold;
-    color: #fff; /* Ensure text is white */
+    /* color: #fff; */
     text-transform: uppercase;
-    background: linear-gradient(90deg, #4caf50, #009688);
+    background: var(--primary-color);
     border: none;
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+    text-shadow: 1px 1px 1px rgb(255 255 255 / 100%);
 }
 
 
 
 .btn-gradient:hover {
-    background: linear-gradient(90deg, #009688, #4caf50);
+    background: var(--primary-color);
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
+#helpline{
+    color: #fff;
+}
+
 
 /* Button Animation */
 .animated-button {

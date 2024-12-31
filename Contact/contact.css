@@ -252,25 +252,30 @@ footer .submenu li a:hover {
 
 }
 
+
+
 /* Contact Container */
 .contact-container {
     max-width: 650px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #ffffff;
-    border-radius: 12px;
+    /* background-color: #ffffff; */
+    /* border-radius: 12px; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: fadeInUp 1.2s ease-out;
+    background: linear-gradient(45deg, #e0e7ff, #f8f9fa);
+    border-radius: 12px;
 }
 
 /* Heading and Description */
 .contact-container h2 {
     font-size: 32px;
-    color: #333;
+    color: #3b3b6d;
     margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: bold;
     animation: fadeIn 1.5s ease;
+    font-family: serif;
 }
 
 .contact-container p {
@@ -290,26 +295,42 @@ footer .submenu li a:hover {
 
 .contact-form label {
     font-size: 16px;
-    color: #444;
+    color: #3b3b6d;
     text-align: left;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.contact-form input,
+
 .contact-form textarea {
     padding: 12px 18px;
-    border: 2px solid #ccc;
+    border: none;
     border-radius: 8px;
     font-size: 16px;
     width: 100%;
     transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+
+.contact-form input {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+    background: linear-gradient(145deg, #e6f7ff, #d0ebff); /* Optional: Adds a subtle focus background effect */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    border: 2px solid #007bff;
+    transform: scale(1.06);
+    transition: 0.5s;
 }
 
 .contact-form textarea {
@@ -403,16 +424,3 @@ footer .submenu li a:hover {
     transform: scale(1.05);
 }
 
-/* Input Focus Effects */
-.contact-form input:focus, 
-.contact-form textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-    background-color: #f0f8ff;
-}
-
-/* Adding subtle background gradient */
-.contact-container {
-    background: linear-gradient(45deg, #e0e7ff, #f8f9fa);
-    border-radius: 12px;
-}
