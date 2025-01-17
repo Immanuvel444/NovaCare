@@ -344,6 +344,65 @@ header {
 
 
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-caption-1 {
+        top: 40%; /* Adjust position for smaller screens */
+    }
+
+    .carousel-caption-2 {
+        top: 40%;
+        left: 50%;
+        }
+
+    .carousel-heading-1 {
+        font-size: 2rem; /* Smaller heading for tablets */
+    }
+
+    .carousel-paragraph-1 {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+    .carousel-heading-2 {
+        font-size: 2rem; /* Smaller heading for tablets */
+    }
+
+    .carousel-paragraph-2 {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-image {
+        height: 400px; /* Adjust image height for mobile */
+    }
+
+    .carousel-caption-1 {
+        top: 40%; /* Lower position for captions */
+    }
+
+    .carousel-heading-1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .carousel-paragraph-1 {
+        font-size: 0.9rem;
+    }
+    .carousel-caption-2 {
+        top: 29%; /* Lower position for captions */
+    }
+
+    .carousel-heading-2 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .carousel-paragraph-2 {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
 
 
   /* //////////////////////////////////////////// */
