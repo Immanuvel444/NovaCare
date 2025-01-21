@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #3b3b6d; /* Define your color variable */
-    --secondary-color:linear-gradient(90deg, #000000a3, #c71551bd);
+    --primary-color: #000080; /* Define your color variable */
+    --secondary-color:#176EB0;
   }
 
 /* General Styles */
@@ -38,7 +38,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, #0c7bf1, #2dd5e7); /* Stylish gradient */
+    background: var(--primary-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: background-color 0.3s ease;
@@ -60,7 +60,7 @@ header {
 /* Navigation Links */
 .navbar-nav .nav-link {
     text-decoration: none;
-    color: #3b3b6d;
+    color: #fff;
     font-size: 1.2rem; /* Slightly larger font size */
     padding: 12px 25px;
     margin: 0 10px; /* Add spacing between nav links */
@@ -79,7 +79,7 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #000000a3, #c71551bd);
+    background: #176EB0;
     z-index: -1;
     transition: left 0.4s ease;
 }
@@ -93,38 +93,10 @@ header {
     transform: scale(1.05);
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    background: #222;
-    border: none;
-    animation: fadeIn 0.3s ease-in-out;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    padding: 15px; /* Add padding inside dropdown */
-    border-radius: 10px; /* Add rounded corners */
-}
-
-.dropdown-menu li {
-    margin-bottom: 10px; /* Add spacing between dropdown items */
-}
-
-.dropdown-item {
-    color: #3b3b6d;
-    padding: 10px 20px;
-    border-radius: 8px; /* Rounded corners for dropdown items */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-
-
-.dropdown-item:hover {
-    background: linear-gradient(90deg, #000000a3, #c71551bd);
-    color: #fff;
-    transform: scale(1.05);
-}
 
 /* Header Buttons */
 .header-buttons .contact-btn {
-    background:linear-gradient(90deg, #000000a3, #c71551bd);
+    background:#176EB0;
     border: none;
     color: #fff;
     padding: 12px 30px; /* Increase button size */
@@ -463,7 +435,7 @@ header {
 
 
 
-/* Footer Styles */
+
 
 
 /* Footer Styles */
@@ -483,8 +455,8 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #2a5298, #1e355d);
-    opacity: 0.2;
+    background:var(--primary-color);
+    /* opacity: 0.2; */
     z-index: 0;
 }
 
@@ -529,10 +501,11 @@ footer a:hover {
 }
 
 .hover-link:hover {
-    background-color: #2a5298;
+    background-color: #66c7f4;
     color: #fff;
-    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(102, 199, 244, 0.8);
 }
+
 
 .text-light{
     font-size: 18px;
@@ -621,6 +594,9 @@ footer p {
     }
 }
 
+.extra-padding p{
+padding-bottom: 10px;
+}
 
 
 /* ..................................................... */
@@ -690,7 +666,7 @@ medical coding line */
     padding: 5px 10px;
     font-size: 14px;
     color: #333;
-    background-color: #fff;
+    background-color: var(--secondary-color) !important;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: Monserat;
@@ -698,7 +674,7 @@ medical coding line */
 
 .rbt-badge-3 a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 
@@ -707,12 +683,12 @@ medical coding line */
     padding: 20px;
     text-align: center;
     transition: background-color 0.3s ease;
-    background: linear-gradient(45deg, #88b3e0, #b2e6ec); /* Stylish gradient */
+    background:#0d0d3f;
 
 }
 
 .rbt-card-body:hover {
-    background-color: #f9fbfd;
+    background-color: #0d0d3f;
 }
 
 /* Title and Meta */
@@ -725,7 +701,7 @@ medical coding line */
 }
 
 .rbt-card-title a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -735,7 +711,7 @@ medical coding line */
 
 .rbt-meta {
     font-size: 14px;
-    color: #666;
+    color: #fff;
     margin-bottom: 15px;
     font-family: Monserat;
 }
@@ -745,7 +721,7 @@ list-style-type: none;
 
 .rbt-card-text {
     font-size: 14px;
-    color: #3b3b6d;
+    color: #fff;
     line-height: 1.6;
     font-family: Monserat;
 }
@@ -801,10 +777,10 @@ list-style-type: none;
                 background: var(--secondary-color);
                 color: #fff;
                 font-weight: bold;
-                transition: background 0.4s ease-in-out;
+                transition: background 0.4s ease-in;
 }
 .new-course-btn:hover{
-    background: #003e66;
+    background: #0056b3;
     transform: scale(1.1);
 }
 
@@ -1093,7 +1069,7 @@ list-style-type: none;
 /* Subtitle Styling */
 .subtitle {
     font-size: 18px;
-    color: var(--primary-color);
+    color:var(--primary-color);
     line-height: 1.8;
     margin-top: 10px;
 }
@@ -1106,7 +1082,7 @@ list-style-type: none;
     font-weight: bold;
     /* color: #fff; */
     text-transform: uppercase;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border: none;
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -1117,8 +1093,8 @@ list-style-type: none;
 
 
 .btn-gradient:hover {
-    background: var(--primary-color);
-    transform: scale(1.1);
+    background: var(--secondary-color);
+    transform: scale(1.06);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -1469,7 +1445,7 @@ list-style-type: none;
 }
 
 .btn-color{
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 
