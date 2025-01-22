@@ -3,6 +3,16 @@
     --secondary-color:#176EB0;
   }
 
+
+::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers (Chrome, Safari) */
+}
+
+* {
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;    /* Hide scrollbar for Firefox */
+}
+
 /* General Styles */
 * {
     margin: 0;
@@ -226,8 +236,6 @@ header {
     padding: 0;
     display: flex;
     gap: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .rbt-meta li {
@@ -299,7 +307,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     z-index: 1000;
@@ -316,8 +324,11 @@ header {
     overflow-x: auto; /* Allows horizontal scrolling */
     -webkit-overflow-scrolling: touch; /* Enables momentum scroll on iOS devices */
     justify-content: space-around;
-    width: 100%;
+    width: 100%;   
+     height: 40px;
+    align-items: center;
 }
+
 
 .swiper-menu li {
     display: inline-block;
@@ -335,11 +346,7 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* .swiper-menu li.current a, 
-.swiper-menu li:hover a {
-    background-color: #f47373;
-    color: white;
-} */
+
 
 .swiper-menu li a:hover {
     background-color: #f47373;
@@ -349,7 +356,7 @@ header {
 /* Add the sticky effect */
 .sticky-top {
     position: sticky;
-    top: 0;
+    top: 123px;
     z-index: 1000;
 }
 
@@ -523,6 +530,7 @@ header {
     overflow: hidden;
     max-height: 0;
     padding: 0 15px;
+    overflow-y: auto;
 }
 
 .accordion-collapse.collapse.show {
@@ -893,6 +901,11 @@ header {
     justify-content: center;
 }
 
+.class-room{
+    display: flex;
+    justify-content: center;
+}
+
 .class-room li{
     color: #fff;
 }
@@ -930,7 +943,7 @@ header {
 }
 
 .rbt-btn-link:hover {
-    color: #222;
+    color: #f47373;
 }
 
 .rbt-btn-link i {

@@ -12,10 +12,10 @@
 <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="/Logo.png" alt="Novahcare Logo" style="max-width: 150px;">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../logo-1.png" alt="Novahcare Logo" style="max-width: 180px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,27 +26,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../../index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="../../Service/RiskAdjustment.html">Risk Adjustment Coding Services</a></li>
-                                <li><a class="dropdown-item" href="../../Service/FacilityCoding.html">Facility Coding Services</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="../../Service/ProfessionalFee.html">Professional Fee Coding Services</a>
-                                   
-                                </li>
-                            </ul>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../Training/Courses.html">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Courses.html">Training</a>
+                            <a class="nav-link" href="../../index.html#about-us">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../../Contact/contact.html">Contact</a>
                         </li>
                     </ul>
+                    <div class="header-buttons d-none d-lg-block">
+                        <a href="../../Contact/contact.html" class="btn btn-primary contact-btn">Get in Touch</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -266,14 +259,16 @@
     <div class="row mb--55 g-5 align-items-end container" style="padding-bottom: 50px;">
         <div class="col-lg-6 col-md-6 col-12">
             <div class="section-title text-start">
-                <span class="subtitle bg-pink-opacity">Top Popular Course</span>
-                <h2 class="title">Suggested <span class="color-primary">Courses</span></h2>
+                <span class="subtitle bg-pink-opacity animated-subtitle" style="font-weight: bold;">Top Popular Course</span>
+                <h2 class="title animated-title" style="font-weight: 500;">
+                    <span class="color-primary gradient-text" style="font-weight: bold;">Suggested Courses</span>
+                </h2>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-12">
             <div class="load-more-btn text-start text-md-end">
-                <a class="rbt-btn rbt-switch-btn bg-primary-opacity" href="../Courses.html">
-                    <span data-text="View All Course">View All Course</span>
+                <a class="new-course-btn" href="../../Training/Courses.html">
+                    <span data-text="View All Courses">View All Courses</span>
                 </a>
             </div>
         </div>
@@ -289,7 +284,7 @@
                                         <div class="rbt-card-img">
                                             <a href="../Training-5/amct.html">
                                                 <img src="../images/amct.png" alt="Card image">
-                                                <div class="rbt-badge-3 bg-white">
+                                                <div class="rbt-badge-3">
                                                     <a href="../../Contact/contact.html"><span>Enroll </span>
                                                         <span>Now</span></a>
                                                 </div>
@@ -299,7 +294,7 @@
                                          
                                             <h4 class="rbt-card-title"><a href="../Training-5/amct.html">AMCT</a>
                                             </h4>
-                                            <ul class="rbt-meta">
+                                            <ul class="rbt-meta class-room">
                                                 <li><i class="feather-book"></i>Classroom / Online Training</li>
                                                 
                                             </ul>
@@ -322,7 +317,7 @@
                                         <div class="rbt-card-img">
                                             <a href="../Training-6/ccs.html">
                                                 <img src="../images/ccs.png" alt="Card image">
-                                                <div class="rbt-badge-3 bg-white">
+                                                <div class="rbt-badge-3">
                                                     <a href="../../Contact/contact.html"><span>Enroll </span>
                                                         <span>Now</span></a>
                                                 </div>
@@ -333,7 +328,7 @@
                 
                                             <h4 class="rbt-card-title"><a href="../Training-6/ccs.html">CCS</a>
                                             </h4>
-                                            <ul class="rbt-meta">
+                                            <ul class="rbt-meta class-room">
                                                 <li><i class="feather-book"></i>Classroom / Online Training</li>
                                               
                                             </ul>
@@ -355,7 +350,7 @@
                                             <div class="rbt-card-img">
                                                 <a href="../Training-1/Ipdrg.html">
                                                     <img src="../images/ip-drg.png" alt="Card image">
-                                                    <div class="rbt-badge-3 bg-white">
+                                                    <div class="rbt-badge-3">
                                                         <a href="../../Contact/contact.html"><span>Enroll </span>
                                                             <span>Now</span></a>
                                                     </div>
@@ -365,7 +360,7 @@
                                                
                                                 <h4 class="rbt-card-title"><a href="../Training-1/Ipdrg.html">IPDRG</a>
                                                 </h4>
-                                                <ul class="rbt-meta">
+                                                <ul class="rbt-meta class-room">
                                                     <li><i class="feather-book"></i>Online Training</li>
                                                     
                                                 </ul>
@@ -385,66 +380,56 @@
     
 
     
-     <!-- Footer -->
-     <footer class="bg-dark text-light pt-5">
-        <div class="container">
-            <div class="row col-md-12">
-                <div class="col-md-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled line-space">
-                        <li>
-                            <a href="../../index.html" class="text-light">Home</a>
-                        </li>
-                        <li><a href="../Courses.html" class="text-light">Training</a></li>
-                        <li><a href="../../Contact/contact.html" class="text-light">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Services</h5>
-                    <ul class="list-unstyled line-space">
-                        <li>
-                            <a href="../../Service/RiskAdjustment.html" class="text-light">Risk Adjustment Coding Services</a>
-                        </li>
-                        <li><a href="../../Service/FacilityCoding.html" class="text-light">Facility Coding Services</a></li>
-                        <li><a href="../../Service/ProfessionalFee.html" class="text-light">Professional Fee Coding Services</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-           <h5>Training</h5>
-           <ul class="list-unstyled line-space">
-            <a href="../Courses.html"><li>Popular Courses</li></a>
-           </ul>
-           
-                </div>
+   
+<!-- footer -->
 
 
-                <div class="col-md-3">
-                    <h5>Contact Us</h5>
-                    <p>Email: novahcare24@gmail.com</p>
-                    <p>Phone: 63820 93267</p>
-                    <ul class="list-inline line-space">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/NovahCareService" class="text-light">Facebook</a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/novahcare?fbclid=IwY2xjawGRl01leHRuA2FlbQIxMAABHUsKn-ViwCpCSlN-BB6zTmHsp5GmVSC4igyd5SevZ-0-krZW8_QmAXdWig_aem_iLIAFmMSsyUnALONaQOUBg" class="text-light">Instagram</a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/novahcareservice?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-light">LinkedIn</a></li>
-                    </ul>
-                </div>
+<footer class="footer text-light pt-5">
+    <div class="container contain-class">
+        <div class="row text-center text-md-start col-md-12">
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled extra-padding">
+                    <p><i class="fa-solid fa-house"></i>&nbsp;<a href="../../index.html" class="hover-link">Home</a></p>
+                    <p><i class="fa-solid fa-book-open"></i>&nbsp;<a href="../../Training/Courses.html" class="hover-link">Courses</a></p>
+                    <p><i class="fa-solid fa-circle-info"></i>&nbsp;<a href="../../index.html#about-us" class="hover-link">About Us</a></p>
+                    <p><i class="fa-solid fa-phone"></i>&nbsp;<a href="../../Contact/contact.html" class="hover-link">Contact</a></p>
+                </ul>
             </div>
-            
-            
+
+            <!-- Contact Us -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact Us</h5>
+                <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:novahcare24@gmail.com" class="text-light">novahcare24@gmail.com</a></p>
+             &nbsp;  <p><i class="fa-solid fa-user"></i>&nbsp;&nbsp; <a href="tel:6382093267" class="text-light">63820 93267</a></p>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="col-md-4 mb-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled">
+                    <p><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/NovahCareService" class="social-link">Facebook</a></p>
+                    <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/novahcare" class="social-link">Instagram</a></p>
+                    <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/novahcareservice" class="social-link">LinkedIn</a></p>
+                </ul>
+            </div>
         </div>
-        <div class="row container">
-            <div class="col-md-6">
-                    <h5>NovahCare</h5>
-                    <p>Leading Novahcare for your business needs.</p>
 
-            </div>
-            <div class="py-3 col-md-6">
+        <hr>
+
+        <!-- Footer Bottom Section -->
+        <div class="row align-items-center text-center text-md-between col-md-12">
+            <div class="col-md-6 text-md-start">
                 <p>&copy; 2024 NovahCare. All rights reserved.</p>
             </div>
+            <div class="col-md-6 text-md-end">
+                <h5>NovahCare</h5>
+                <p>Leading NovahCare for your business needs.</p>
+            </div>
         </div>
-        
-    </footer>
+    </div>
+</footer>
 
 
     <script>
