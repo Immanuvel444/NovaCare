@@ -504,22 +504,6 @@ header {
 }
 
 
-/* View all courses */
-
-.new-course-btn{
-    text-decoration: none;
-                padding: 15px;
-                border-radius: 22px;
-                background: #176EB0;
-                color: #fff;
-                font-weight: bold;
-                transition: background 0.4s ease-in;
-}
-.new-course-btn:hover{
-    background: #0056b3;
-    transform: scale(1.1);
-}
-
 
 
 
