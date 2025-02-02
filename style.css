@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #000080; /* Define your color variable */
+    --primary-color: #0d0d3f; /* Define your color variable */
     --secondary-color:#176EB0;
   }
 
@@ -1297,7 +1297,7 @@ list-style-type: none;
     height: 250px;
     border: 1px solid #f0f0f0;
     border-radius: 10px;
-    background: linear-gradient(45deg, #88b3e0, #b2e6ec);
+    background: var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1316,12 +1316,12 @@ list-style-type: none;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color:#3b3b6d
+    color:#fff
 }
 
 .feature-description {
     font-size: 16px;
-    color: #3b3b6d;
+    color: #fff;
 }
 /* General Section Styling */
 .testimonial-section {
