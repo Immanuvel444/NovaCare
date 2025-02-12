@@ -131,86 +131,64 @@ top: 13%;">
 </section>
 
 
+<section class="container mt-5 section" id="coursecontent">
+    <h3 class="text-center fw-bold">Course Details</h3>
 
-<section class="container mt-5 section flex-column" id="coursecontent" style="flex-direction: column;">
-    <h3 class="section-title text-center">Course Details</h3>
-    <div class="accordion fade-in" id="courseAccordion">
-        
-        <!-- Learning Content -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                    Learning Modules
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#courseAccordion">
-                <div class="accordion-body">
-                    <ul>
-                        <li>Fundamentals of Medical Terminology & Anatomy</li>
-                        <li>Comprehensive ICD-10-CM Coding Practices</li>
-                        <li>Mastering CPT & HCPCS Coding Systems</li>
-                        <li>Billing, Compliance, and Revenue Cycle Management</li>
-                    </ul>
-                </div>
-            </div>
+    <div class="course-wrapper">
+        <!-- Left Side: Fixed Size Buttons -->
+        <div class="course-menu">
+            <button class="toggle-btn active" data-target="content1">Learning Modules</button>
+            <button class="toggle-btn" data-target="content2">Exclusive Benefits</button>
+            <button class="toggle-btn" data-target="content3">Ideal Candidates</button>
+            <button class="toggle-btn" data-target="content4">Course Duration</button>
         </div>
 
-        <!-- Program Perks -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                    Exclusive Benefits
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
-                <div class="accordion-body">
-                    <ul>
-                        <li>Guidance from Industry Experts with 10+ Years of Experience</li>
-                        <li>Access to Premium Study Materials & Online Resources</li>
-                        <li>Interactive Quizzes & Case-Based Learning</li>
-                        <li>Mock Interviews & Career Preparation</li>
-                        <li>24/7 Student Support & Doubt Clearing Sessions</li>
-                    </ul>
-                </div>
+        <!-- Right Side: Content Display -->
+        <div class="course-content">
+            <div id="content1" class="content-box active">
+                <p><strong>Fundamentals of Medical Terminology & Anatomy</strong></p>
+                <p>Comprehensive ICD-10-CM Coding Practices</p>
+                <p>Mastering CPT & HCPCS Coding Systems</p>
+                <p>Billing, Compliance, and Revenue Cycle Management</p>
+            </div>
+            <div id="content2" class="content-box">
+                <p><strong>Guidance from Industry Experts</strong></p>
+                <p>Access to Premium Study Materials</p>
+                <p>Interactive Quizzes & Case-Based Learning</p>
+                <p>Mock Interviews & Career Preparation</p>
+                <p>24/7 Student Support & Doubt Clearing Sessions</p>
+            </div>
+            <div id="content3" class="content-box">
+                <p><strong>Graduates & Students</strong> from Life Sciences, Pharmacy, and Allied Health Fields</p>
+                <p>Healthcare Professionals Looking to Upskill</p>
+                <p>Individuals Seeking Certification in Medical Coding</p>
+            </div>
+            <div id="content4" class="content-box">
+                <p><strong>4 Weeks</strong> (Comprehensive Training Program)</p>
             </div>
         </div>
-
-        <!-- Who Can Join -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                    Ideal Candidates
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
-                <div class="accordion-body">
-                    <ul>
-                        <li>Graduates & Students from Life Sciences, Pharmacy, and Allied Health Fields</li>
-                        <li>Healthcare Professionals Looking to Upskill</li>
-                        <li>Individuals Seeking Certification in Medical Coding</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Duration -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                    Course Duration
-                </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
-                <div class="accordion-body">
-                    <p><i class="fa-solid fa-circle-play"></i> 4 Weeks (Comprehensive Training Program)</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".toggle-btn");
+        const contents = document.querySelectorAll(".content-box");
+    
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                buttons.forEach(btn => btn.classList.remove("active"));
+                contents.forEach(content => content.classList.remove("active"));
+    
+                this.classList.add("active");
+                document.getElementById(this.getAttribute("data-target")).classList.add("active");
+            });
+        });
+    });
+    </script>
+
+    
 <!-- ------------------------end----------------------- -->
 
   
