@@ -156,8 +156,8 @@ header {
 
 .carousel-caption-1{
     position: absolute;
-    bottom: 40%;
-    left: 50%;
+    bottom: 55%;
+    left: 30%;
     transform: translateX(-50%);
     text-align: center;
     color: #fff; /* White text for contrast */
