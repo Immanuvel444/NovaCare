@@ -154,6 +154,7 @@ header {
     object-fit: inherit; /* Ensures image fits properly without distortion */
 }
 
+
 .carousel-caption-1{
     position: absolute;
     bottom: 55%;
