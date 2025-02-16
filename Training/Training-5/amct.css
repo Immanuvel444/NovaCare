@@ -757,4 +757,6 @@ margin-bottom: 15px;
     font-size: 19px;
     font-family: auto;
     background-color: #57CC74;
+    position: sticky;
+    top: 17%;
 }
