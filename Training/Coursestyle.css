@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat medium';
 }
 
 body {
@@ -416,7 +417,7 @@ header {
 
 .rbt-card-body {
     padding: 20px;
-    background-color: #0d0d3f;
+    background-color:#fff;
 }
 
 .rbt-card-title {
@@ -427,13 +428,13 @@ header {
 }
 
 .rbt-card-title a{
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .rbt-meta {
     font-size: 14px;
-    color: #fff;
+    color: var(--primary-color);
     margin-bottom: 15px;
 }
 .rbt-meta li{
@@ -443,7 +444,7 @@ header {
 
 .rbt-card-text {
     font-size: 14px;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .rbt-card-bottom {

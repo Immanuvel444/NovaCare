@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat medium';
 }
 
 body {
@@ -559,6 +560,7 @@ footer p {
 
 .contain-class{
     flex-direction: column;
+    align-items: normal;
 }
 
 /* Responsive Styles */
@@ -684,12 +686,12 @@ medical coding line */
     padding: 20px;
     text-align: center;
     transition: background-color 0.3s ease;
-    background:#0d0d3f;
+    background:#fff;
 
 }
 
 .rbt-card-body:hover {
-    background-color: #0d0d3f;
+    background-color: #fff;
 }
 
 /* Title and Meta */
@@ -702,7 +704,7 @@ medical coding line */
 }
 
 .rbt-card-title a {
-    color: #fff;
+    color:var(--primary-color);
     text-decoration: none;
 }
 
@@ -712,7 +714,7 @@ medical coding line */
 
 .rbt-meta {
     font-size: 14px;
-    color: #fff;
+    color: var(--primary-color);
     margin-bottom: 15px;
     font-family: Monserat;
 }
@@ -722,9 +724,10 @@ list-style-type: none;
 
 .rbt-card-text {
     font-size: 14px;
-    color: #fff;
+    color: var(--primary-color);
     line-height: 1.6;
     font-family: Monserat;
+    text-align:left;
 }
 
 /* Button Link */
@@ -1275,6 +1278,7 @@ list-style-type: none;
     font-size: 18px;
     color: #3b3b6d;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 
@@ -1323,6 +1327,7 @@ list-style-type: none;
 .feature-description {
     font-size: 16px;
     color: #fff;
+    text-align: left;
 }
 /* General Section Styling */
 .testimonial-section {

@@ -15,6 +15,7 @@
     box-sizing: border-box; 
     -ms-overflow-style: none;
     scrollbar-width: none;  
+    font-family: 'Montserrat medium';
 }
 
 body {
@@ -385,13 +386,13 @@ padding-bottom: 10px;
 }
 
 .rbt-card-title a{
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .rbt-card-body {
     padding: 20px;
-    background-color: #0d0d3f;
+    background-color: #fff;
 }
 
 .rbt-card-title {
@@ -407,9 +408,6 @@ padding-bottom: 10px;
     justify-content: center;
 }
 
-.class-room li{
-    color: #fff;
-}
 
 
 .rbt-meta {
@@ -421,7 +419,7 @@ padding-bottom: 10px;
 
 .rbt-card-text {
     font-size: 14px;
-    color: #fff;
+    color: var(--primary-color);
     font-family: Monserat;
 }
 
@@ -586,7 +584,7 @@ padding-bottom: 10px;
 }
 
 .class-room li {
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .rbt-meta li svg {
@@ -757,6 +755,4 @@ margin-bottom: 15px;
     font-size: 19px;
     font-family: auto;
     background-color: #57CC74;
-    position: sticky;
-    top: 23%;
 }
